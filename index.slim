@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta name="description" content=""
+    meta name="author" content=""
+    meta content="noindex" name="robots"
+    title Transactions
+    /! HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      = javascript_include_tag "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js", "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags 
+  body.contrast-red.login.contrast-background
+    .middle-container
+      .middle-row
+        .middle-wrapper
+          .login-container-header
+            .container
+              .row
+                .col-sm-12
+                  .text-center
+                    img height="31" src="#{image_url 'flatty/logo.svg'}" width="121" /
+          = yield
