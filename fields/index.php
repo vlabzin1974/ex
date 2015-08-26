@@ -18,7 +18,7 @@
   <script src="/jquery.2.1.4.js"></script>
 </head>
 <body>
-<div id="basis">
+<div id="basis" class="bas">
 
 
   <table id="tb">
