@@ -12,7 +12,7 @@
     }
     td{
       border:1px solid #000;
-
+padding:5px;
     }
   </style>
   <script src="/jquery.2.1.4.js"></script>
