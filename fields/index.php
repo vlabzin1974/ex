@@ -12,17 +12,13 @@
     }
     td{
       border:1px solid #000;
-      -webkit-transition:prop time;
-      -moz-transition:prop time;
-      -ms-transition:prop time;
-      -o-transition:prop time;
-      transition:prop time;
+
     }
   </style>
   <script src="/jquery.2.1.4.js"></script>
 </head>
 <body>
-<div id="basis" class="basr">
+<div id="basis">
 
 
   <table id="tb">
