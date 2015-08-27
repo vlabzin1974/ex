@@ -21,7 +21,7 @@ padding:5px;
 <div id="basis" class="basr">
 
 
-  <table id="tb">
+  <table id="tb"><!---->
     <tr id="header">
       <th>Наименование</th>
       <th>Артикул</th>
