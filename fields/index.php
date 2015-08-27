@@ -12,7 +12,11 @@
     }
     td{
       border:1px solid #000;
-padding:5px;
+      -webkit-transition:prop time;
+      -moz-transition:prop time;
+      -ms-transition:prop time;
+      -o-transition:prop time;
+      transition:prop time;
     }
   </style>
   <script src="/jquery.2.1.4.js"></script>
@@ -21,7 +25,7 @@ padding:5px;
 <div id="basis" class="basr">
 
 
-  <table id="tb"><!---->
+  <table id="tb">
     <tr id="header">
       <th>Наименование</th>
       <th>Артикул</th>
