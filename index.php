@@ -6,8 +6,18 @@ header('Content-Type: charset-utf-8');
 <head>
   <meta charset="utf-8">
   <script type="text/javascript" src="jquery.2.1.4.js"></script>
+  <style type="text/css">
+    body{background:url("DSCN4460.JPG") no-repeat 50% 50%;
+      -webkit-background-size:100%;
+      background-size:100%;}
+  </style>
 </head>
 <body>
+
+<?php
+
+?>
+
 
 <style type="text/css">
 #coll{display:none}
@@ -120,6 +130,7 @@ echo '</pre>';*/
 </form>
 <span id="test"></span>
 <script type="text/javascript" src="js.js"></script>
+
 </body>
 </html>
 
