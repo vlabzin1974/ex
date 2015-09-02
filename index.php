@@ -7,17 +7,41 @@ header('Content-Type: charset-utf-8');
   <meta charset="utf-8">
   <script type="text/javascript" src="jquery.2.1.4.js"></script>
   <style type="text/css">
-    body{background:url("DSCN4460.JPG") no-repeat 50% 50%;
-      -webkit-background-size:100%;
-      background-size:100%;}
+    #test i{display:block}
   </style>
 </head>
 <body>
-<!--1 2 3-->
+<!--1 2 3 -->
+<div id="r">
+
+</div>
 <?php
 
 ?>
+<script type="text/javascript">
+  function d(x){
+    var test=document.getElementById('test');
+    var inTest = document.createElement('i');
+    inTest.innerHTML = x;
+    test.appendChild(inTest);
+  }
 
+  $(document).ready(function(){
+      $.ajax({
+        type: "GET",
+        //url: 'http://photo-market.org/items.json?widget=true',
+        url: 'composer.json',
+        success: function(data) {
+          $.each(data, function(index, item) {
+            //item_url = 'http://photo-market.org/items/' + item.id
+            d(item);
+            //$('#r').append('');
+          });
+        }
+      });
+
+  });
+</script>
 
 <style type="text/css">
 #coll{display:none}
@@ -41,7 +65,7 @@ header('Content-Type: charset-utf-8');
 --------------------------
 <?php
 
-/*class Database {
+class Database {
 
   private $_connection;
   static private $_instance;
@@ -81,7 +105,7 @@ while($row = $result->fetch_assoc()){
   echo '<pre>';
   print_r($row);
   echo '</pre>';
-}*/
+}
 
 /*class A {
   private $aa;
